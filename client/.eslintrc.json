@@ -53,7 +53,7 @@
     "import/prefer-default-export": 0,
     "import/no-anonymous-default-export": 0,
     "import/no-unresolved": 2,
-    "simple-import-sort/imports": "error",
+    "simple-import-sort/imports": "off",
     "simple-import-sort/exports": "error",
     "sort-imports": "off",
     "import/order": "off",
@@ -71,6 +71,7 @@
       }
     ],
     "react/jsx-one-expression-per-line": "off",
-    "react/jsx-curly-newline": "off"
+    "react/jsx-curly-newline": "off",
+    "dot-notation": "off"
   }
 }

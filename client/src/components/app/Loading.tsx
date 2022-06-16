@@ -1,10 +1,10 @@
 import { Spinner, Text } from '@chakra-ui/react';
 import { ReactElement } from 'react';
 
-export function Loading(): ReactElement {
-  // will use React Query `useIsFetching` to determine whether or not to display
-  const isFetching = false; // for now, just don't display
+import { useIsFetching } from 'react-query';
 
+export function Loading(): ReactElement {
+  const isFetching = useIsFetching();
   const display = isFetching ? 'inherit' : 'none';
 
   return (
